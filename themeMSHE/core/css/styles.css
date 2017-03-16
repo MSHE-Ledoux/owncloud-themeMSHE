@@ -1,0 +1,101 @@
+/*  Theme example. Override the main style and make links red */
+
+#header .avatardiv {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#body-user #header{
+ /* background-color:#2196F3; */
+}
+
+.nav-sharinglinks {
+display: none;
+}
+
+.nav-sharingout {
+display: none;
+}
+
+.nav-trashbin {
+    position: relative !important;
+}
+
+.nav-trashbin a:before {
+   /* content:"icon"; */
+}
+
+/* block avec l'adresse WebDAV en bas à droite */
+#app-settings {
+/*display: none;*/
+}
+
+#header .logo-icon {
+	background-image: url('../img/logo-icon.svg');
+	width: 62px;
+	height: 34px;
+}
+
+
+/************** login page ***************************/
+
+#body-login {
+    background-image: url('../img/background.jpg');
+}
+
+#body-login  #header .logo {
+	background-image: url('../img/logo.svg');
+	width: 250px;
+	height: 121px;
+}
+
+#body-login .v-align {
+	/*margin-top: 38.2vh;
+	transform: translateY(-50%);
+	*/
+    position: absolute;
+    top:38.2%; /* poussé de la moitié de hauteur du référent */
+    transform: translateY(-50%); */
+}
+
+#body-login #select-login {
+	margin-top: 20px;
+}
+
+/*#body-login form[name='login']:before {
+    content: 'Compte special';
+    color: white;
+}*/
+
+#alternative-logins legend {
+    display:none;
+}
+
+#body-login #alternative-logins fieldset ul {
+    text-align: right;
+    margin-right: 24px;
+}
+
+#body-login footer {
+    display: none;
+}
+
+#body-login input[type="text"], #body-login input[type="password"] {
+   background: white; /* The Fallback */
+   background-color: rgba(255, 255, 255, 0.3) !important;
+   color: #555;  /* The Fallback */
+   color: rgba(255, 252, 252, 0.7) !important;
+}
+
+#body-login input[type="text"]:hover, #body-login input[type="password"] {
+    color: black;  /* The Fallback */
+    color: rgba(255, 255, 255, 1.0) !important;
+}
+
+#body-login #submit.login {
+    filter: invert(90%);
+}
+
+#body-login fieldset ul {
+    text-align: center;
+}
